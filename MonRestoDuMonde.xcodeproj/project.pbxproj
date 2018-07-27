@@ -19,6 +19,8 @@
 		9526B360210A5E3E0061CB18 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9526B35F210A5E3E0061CB18 /* MenuCell.swift */; };
 		95AC9793210B48DA00882A5F /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9792210B48DA00882A5F /* Plat.swift */; };
 		95AC9795210B494000882A5F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9794210B494000882A5F /* Enums.swift */; };
+		95AC9797210B4CDC00882A5F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9796210B4CDC00882A5F /* Menu.swift */; };
+		95AC9799210B4F9000882A5F /* LesPlats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9798210B4F9000882A5F /* LesPlats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		9526B35F210A5E3E0061CB18 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		95AC9792210B48DA00882A5F /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
 		95AC9794210B494000882A5F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		95AC9796210B4CDC00882A5F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		95AC9798210B4F9000882A5F /* LesPlats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesPlats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			children = (
 				95AC9792210B48DA00882A5F /* Plat.swift */,
 				95AC9794210B494000882A5F /* Enums.swift */,
+				95AC9796210B4CDC00882A5F /* Menu.swift */,
+				95AC9798210B4F9000882A5F /* LesPlats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,7 +199,9 @@
 				9526B35C210A53950061CB18 /* Constantes.swift in Sources */,
 				9526B352210A4FC10061CB18 /* MenuController.swift in Sources */,
 				9526B35E210A577B0061CB18 /* MonNav.swift in Sources */,
+				95AC9797210B4CDC00882A5F /* Menu.swift in Sources */,
 				9526B340210A4B2F0061CB18 /* AppDelegate.swift in Sources */,
+				95AC9799210B4F9000882A5F /* LesPlats.swift in Sources */,
 				9526B359210A53020061CB18 /* MonTabBar.swift in Sources */,
 				95AC9793210B48DA00882A5F /* Plat.swift in Sources */,
 				95AC9795210B494000882A5F /* Enums.swift in Sources */,
