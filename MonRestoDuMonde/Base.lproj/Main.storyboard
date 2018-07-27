@@ -17,14 +17,45 @@
                     <view key="view" contentMode="scaleToFill" id="lHx-0c-8vh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2uC-j5-Nal">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="93w-6M-Lx6">
+                                    <size key="itemSize" width="152" height="166"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="wmg-Zf-oAC" customClass="MenuCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="152" height="166"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2uC-j5-Nal" firstAttribute="trailing" secondItem="Ww5-3X-d8i" secondAttribute="trailing" id="ASD-0b-uba"/>
+                            <constraint firstItem="2uC-j5-Nal" firstAttribute="leading" secondItem="Ww5-3X-d8i" secondAttribute="leading" id="Cqp-HM-Bvg"/>
+                            <constraint firstItem="2uC-j5-Nal" firstAttribute="top" secondItem="Ww5-3X-d8i" secondAttribute="top" id="TYP-xx-2CJ"/>
+                            <constraint firstItem="2uC-j5-Nal" firstAttribute="bottom" secondItem="Ww5-3X-d8i" secondAttribute="bottom" id="hJf-DK-Tor"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ww5-3X-d8i"/>
                     </view>
                     <navigationItem key="navigationItem" id="kFH-vS-C6H"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2uC-j5-Nal" id="NM5-Gy-BMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhA-3Q-NvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="-197"/>
+            <point key="canvasLocation" x="1013.6" y="-197.45127436281859"/>
         </scene>
         <!--Mon Tab Bar-->
         <scene sceneID="BUm-dr-TLr">
@@ -82,8 +113,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="2Sc-wR-UzH" id="sTh-Og-vJ2"/>
-                            <outlet property="delegate" destination="2Sc-wR-UzH" id="Qa9-qW-aQa"/>
+                            <outlet property="dataSource" destination="2Sc-wR-UzH" id="NOa-Hy-yKE"/>
+                            <outlet property="delegate" destination="2Sc-wR-UzH" id="28h-fH-OBT"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="JZL-No-Hwk"/>
