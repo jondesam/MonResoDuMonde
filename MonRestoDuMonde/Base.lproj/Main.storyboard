@@ -48,7 +48,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="2dq-7F-CVA"/>
                                                         <constraint firstAttribute="trailing" secondItem="vaR-7T-1tu" secondAttribute="trailing" constant="8" id="5Vs-N3-xIw"/>
@@ -65,6 +65,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="A7c-PW-aYg" firstAttribute="top" secondItem="wmg-Zf-oAC" secondAttribute="top" constant="5" id="OFt-1v-d7A"/>
                                             <constraint firstItem="A7c-PW-aYg" firstAttribute="centerX" secondItem="wmg-Zf-oAC" secondAttribute="centerX" id="d4J-Qj-110"/>
