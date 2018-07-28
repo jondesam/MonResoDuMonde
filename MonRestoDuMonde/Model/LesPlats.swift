@@ -8,11 +8,13 @@
 
 import UIKit
 
-class LessPlats {
-    static let obtenir = LessPlats()
+class LesPlats {
     
-    func lesMenus() -> [Menu]{
+    static let obtenir = LesPlats()
+    
+    func lesMenus() -> [Menu] {
         var menus = [Menu]()
+        
         let it  = Menu(pays: ITALIE, image: #imageLiteral(resourceName: "pizza"))
         let jap = Menu(pays: JAPON, image: #imageLiteral(resourceName: "sushis"))
         let chi = Menu(pays: CHINE, image: #imageLiteral(resourceName: "crevette aigre doux"))

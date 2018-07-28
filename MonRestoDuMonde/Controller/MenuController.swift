@@ -23,9 +23,9 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         collectionView.delegate = self
         collectionView.dataSource = self
-    //    LessPlats.obtenir.lesMenus()
-    //   LessPlats.lesMenus(LessPlats)
-        menus = LessPlats.obtenir.lesMenus()
+    //    LesPlats.obtenir.lesMenus()
+    //   LesPlats.lesMenus(LesPlats)
+        menus = LesPlats.obtenir.lesMenus()
         collectionView.reloadData()
 
     }
@@ -35,9 +35,11 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let menu = menus[indexPath.item]
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? MenuCell{
-            cell.backgroundColor = GRIS_TRES_FONCE
+        
+            cell.miseEnPlace(menu: menu)
+           // cell.backgroundColor = GRIS_TRES_FONCE
             return cell
             
         }
