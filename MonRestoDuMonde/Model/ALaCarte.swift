@@ -23,6 +23,6 @@ class ALaCarte {
     
     init(type: Type) {
         self._type = type
-        self._plates = [plat]()
+        self._plates = LesPlats.obtenir.aLaCarte(type: self._type)
     }
 }

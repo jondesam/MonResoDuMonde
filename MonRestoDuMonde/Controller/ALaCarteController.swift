@@ -15,6 +15,13 @@ class ALaCarteController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let vue = UIView(frame: tableView.bounds)
+        vue.layer.addSublayer(Degrade())
+        
+        tableView.backgroundView = vue
+        
+        tousLesPlats = LesPlats.obtenir.carteComplet()
 
     }
 
@@ -36,7 +43,24 @@ class ALaCarteController: UITableViewController {
             return cell
         }
 
-        return UITableViewCell
+        return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let typeDePlat = tousLesPlats[section].type
+    
+        switch typeDePlat {
+        case .entree: return "Nos Entrées"
+        case .platPrincipal: return "Nos plats principaux"
+        case .dessert: return "Le coin des gourmands"
+        }
+    
+    }
+    
+    
   
 }
