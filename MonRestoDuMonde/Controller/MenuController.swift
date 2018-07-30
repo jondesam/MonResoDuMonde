@@ -13,6 +13,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let cellID = "MenuCell"
+    let segueID = "versDetail"
     
     var menus = [Menu]()
     
@@ -61,7 +62,16 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
-    
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let menu = menus[indexPath.item]
+        performSegue(withIdentifier: segueID, sender: menu)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let detail = segue.destination as? DetailController {
+                detail.menu = sender as? Menu
+            }
+        }
+    }
 
 }

@@ -95,6 +95,7 @@
                     <navigationItem key="navigationItem" id="kFH-vS-C6H"/>
                     <connections>
                         <outlet property="collectionView" destination="2uC-j5-Nal" id="NM5-Gy-BMt"/>
+                        <segue destination="P2A-wf-iE8" kind="show" identifier="versDetail" id="FfS-Tl-vwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhA-3Q-NvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,6 +197,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nC3-3P-eTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013.6" y="474.51274362818594"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Z81-1z-4uH">
+            <objects>
+                <viewController id="P2A-wf-iE8" customClass="DetailController" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vSV-lS-pPL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-WY-F79">
+                                <rect key="frame" x="0.0" y="64" width="375" height="544"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ele-WY-F79" firstAttribute="leading" secondItem="NbT-r2-NGQ" secondAttribute="leading" id="NRA-dB-r8R"/>
+                            <constraint firstItem="Ele-WY-F79" firstAttribute="top" secondItem="NbT-r2-NGQ" secondAttribute="top" id="i4U-zd-5VZ"/>
+                            <constraint firstItem="NbT-r2-NGQ" firstAttribute="bottom" secondItem="Ele-WY-F79" secondAttribute="bottom" constant="10" id="k1n-8F-6h0"/>
+                            <constraint firstItem="Ele-WY-F79" firstAttribute="trailing" secondItem="NbT-r2-NGQ" secondAttribute="trailing" id="nGE-Tn-tfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NbT-r2-NGQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="scroll" destination="Ele-WY-F79" id="Q6H-Dp-wiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOR-bI-ite" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="-197.45127436281859"/>
         </scene>
         <!--A La Carte -->
         <scene sceneID="nqz-CX-m91">
