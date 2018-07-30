@@ -22,6 +22,8 @@
 		95AC9797210B4CDC00882A5F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9796210B4CDC00882A5F /* Menu.swift */; };
 		95AC9799210B4F9000882A5F /* LesPlats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC9798210B4F9000882A5F /* LesPlats.swift */; };
 		95AC979B210D021F00882A5F /* Degrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC979A210D021F00882A5F /* Degrade.swift */; };
+		95AC979D210D09F100882A5F /* PlatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC979C210D09F100882A5F /* PlatCell.swift */; };
+		95AC979F210D0D2100882A5F /* ALaCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC979E210D0D2100882A5F /* ALaCarte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		95AC9796210B4CDC00882A5F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		95AC9798210B4F9000882A5F /* LesPlats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesPlats.swift; sourceTree = "<group>"; };
 		95AC979A210D021F00882A5F /* Degrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Degrade.swift; sourceTree = "<group>"; };
+		95AC979C210D09F100882A5F /* PlatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatCell.swift; sourceTree = "<group>"; };
+		95AC979E210D0D2100882A5F /* ALaCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				95AC9794210B494000882A5F /* Enums.swift */,
 				95AC9796210B4CDC00882A5F /* Menu.swift */,
 				95AC9798210B4F9000882A5F /* LesPlats.swift */,
+				95AC979E210D0D2100882A5F /* ALaCarte.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			children = (
 				9526B35F210A5E3E0061CB18 /* MenuCell.swift */,
 				95AC979A210D021F00882A5F /* Degrade.swift */,
+				95AC979C210D09F100882A5F /* PlatCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,9 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AC979F210D0D2100882A5F /* ALaCarte.swift in Sources */,
 				9526B360210A5E3E0061CB18 /* MenuCell.swift in Sources */,
 				9526B35C210A53950061CB18 /* Constantes.swift in Sources */,
 				9526B352210A4FC10061CB18 /* MenuController.swift in Sources */,
+				95AC979D210D09F100882A5F /* PlatCell.swift in Sources */,
 				9526B35E210A577B0061CB18 /* MonNav.swift in Sources */,
 				95AC979B210D021F00882A5F /* Degrade.swift in Sources */,
 				95AC9797210B4CDC00882A5F /* Menu.swift in Sources */,
