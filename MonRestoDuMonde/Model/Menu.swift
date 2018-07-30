@@ -12,7 +12,7 @@ class Menu {
     
     private var _pays: String
     private var _image: UIImage
-    private var _plat: [Plat]
+    private var _plats: [Plat]
     
     var pays: String {
         return _pays
@@ -22,15 +22,15 @@ class Menu {
         return _image
     }
     
-    var plat:[Plat] {
-        return _plat
+    var plats: [Plat] {
+        return _plats
     }
     
     
     init(pays: String, image: UIImage) {
         self._pays = pays
         self._image = image
-        self._plat = LesPlats.obtenir.ajouterPlatAuMenu(pays: self._pays)
+        self._plats = LesPlats.obtenir.ajouterPlatAuMenu(pays: self._pays)
     }
     
 }
